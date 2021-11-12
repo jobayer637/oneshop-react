@@ -1,0 +1,29 @@
+{
+  "name": "one_shop_backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "client": "cd one_shop && npm start",
+    "dashboard": "cd dashboard && npm start",
+    "dev": "concurrently -n 'server,client,dashboard' -c 'red,yellow,black' \"nodemon server.js\" \"npm run client\"  \"npm run dashboard\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "concurrently": "^6.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.1.4",
+    "mongoose": "^6.0.12",
+    "multer": "^1.4.3",
+    "nodemon": "^2.0.14",
+    "react-moment": "^1.1.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
